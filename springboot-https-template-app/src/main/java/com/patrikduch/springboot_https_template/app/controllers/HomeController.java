@@ -1,4 +1,4 @@
-package com.patrikduch.springboot_https_template.application.controllers;
+package com.patrikduch.springboot_https_template.app.controllers;
 
 import com.patrikduch.springboot_https_template.domain.dtos.TestDto;
 import org.springframework.http.HttpStatus;
