@@ -7,4 +7,5 @@ include 'springboot-https-template-persistence'
 include 'springboot-https-template-local'
 include 'springboot-https-template-production'
 include 'springboot-https-template-uat'
+include 'springboot-https-template-development'
 

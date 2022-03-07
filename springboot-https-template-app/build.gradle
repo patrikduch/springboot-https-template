@@ -11,8 +11,22 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    //devDependencies = ['org.foo:dep1:1.0', 'org.foo:dep2:1.0']
+    isProd = System.properties['env'] == 'prod'
+    isDev = System.properties['env'] == 'dev'
+}
+
 dependencies {
+    implementation project(":springboot-https-template-core")
+    implementation project(":springboot-https-template-development")
     implementation project(":springboot-https-template-domain")
+    implementation project(":springboot-https-template-infrastructure")
+    implementation project(":springboot-https-template-local")
+    implementation project(":springboot-https-template-persistence")
+    implementation project(":springboot-https-template-production")
+    implementation project(":springboot-https-template-uat")
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
